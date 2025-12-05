@@ -60,11 +60,11 @@ const Footer = () => {
                   },
                 }}
               >
-              <Button
-                size="lg"
-                onClick={() => handleWhatsApp("LIPO ENZIMÁTICA")}
-                className="w-full text-base md:w-auto px-4 md:px-8"
-              >
+                <Button
+                  size="lg"
+                  onClick={() => handleWhatsApp("LIPO ENZIMÁTICA")}
+                  className="w-full text-base md:w-auto px-4 md:px-8"
+                >
                   SABER MAIS SOBRE A LIPO ENZIMÁTICA
                 </Button>
               </motion.div>
@@ -84,7 +84,7 @@ const Footer = () => {
             >
               <img
                 src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/fim-de-ano/lipo-papada.jpeg"
-                alt="Aplicação de Enzimas"
+                alt="Aplicação de Lipo Enzimática de Papada"
                 className="h-auto w-full max-w-sm rounded-lg object-cover shadow-md"
               />
             </motion.div>
@@ -112,11 +112,11 @@ const Footer = () => {
                   },
                 }}
               >
-              <Button
-                size="lg"
-                onClick={() => handleWhatsApp("LIPO ENZIMÁTICA")}
-                className="w-full text-base md:w-auto px-4 md:px-8"
-              >
+                <Button
+                  size="lg"
+                  onClick={() => handleWhatsApp("LIPO ENZIMÁTICA DE PAPADA")}
+                  className="w-full px-3 py-3 text-sm whitespace-normal break-words md:w-auto md:px-8 md:text-base md:whitespace-nowrap"
+                >
                   SABER MAIS SOBRE A LIPO ENZIMÁTICA DE PAPADA
                 </Button>
               </motion.div>
