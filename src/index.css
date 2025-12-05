@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 170 24% 8%;
+    --foreground: 44 30% 95%;
+
+    --card: 170 26% 12%;
+    --card-foreground: 44 30% 95%;
+
+    --popover: 170 26% 12%;
+    --popover-foreground: 44 30% 95%;
+
+    --primary: 45 95% 55%;
+    --primary-foreground: 168 28% 12%;
+
+    --secondary: 170 22% 14%;
+    --secondary-foreground: 44 30% 92%;
+
+    --muted: 170 18% 18%;
+    --muted-foreground: 44 24% 75%;
+
+    --accent: 160 52% 40%;
+    --accent-foreground: 44 32% 95%;
+
+    --destructive: 16 82% 55%;
+    --destructive-foreground: 44 35% 96%;
+
+    --border: 170 20% 28%;
+    --input: 170 20% 28%;
+    --ring: 45 95% 55%;
+
+    --radius: 0.75rem;
+
+    /* In'Corpore Brand Colors */
+    --brand-pink: 45 95% 55%;
+    --brand-black: 170 24% 8%;
+    --brand-cream: 44 32% 94%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(170 42% 20%) 0%, hsl(160 36% 14%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(170 28% 12%) 0%, hsl(170 22% 8%) 100%);
+
+    /* Shadows */
+    --shadow-luxury: 0 20px 60px -15px hsl(45 95% 55% / 0.35);
+    --shadow-card: 0 10px 40px -10px hsl(170 20% 10% / 0.45);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 170 22% 12%;
+    --sidebar-foreground: 44 30% 92%;
+    --sidebar-primary: 45 95% 55%;
+    --sidebar-primary-foreground: 168 28% 12%;
+    --sidebar-accent: 160 48% 36%;
+    --sidebar-accent-foreground: 44 32% 95%;
+    --sidebar-border: 170 20% 26%;
+    --sidebar-ring: 45 95% 55%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 44 30% 96%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 44 30% 96%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 44 30% 96%;
+
+    --primary: 45 95% 55%;
+    --primary-foreground: 170 24% 8%;
+
+    --secondary: 170 22% 14%;
+    --secondary-foreground: 44 30% 92%;
+
+    --muted: 170 18% 18%;
+    --muted-foreground: 44 24% 75%;
+
+    --accent: 160 52% 40%;
+    --accent-foreground: 44 32% 95%;
+
+    --destructive: 16 78% 52%;
+    --destructive-foreground: 44 35% 96%;
+
+    --border: 170 20% 28%;
+    --input: 170 20% 28%;
+    --ring: 45 95% 55%;
+    --sidebar-background: 170 22% 12%;
+    --sidebar-foreground: 44 30% 92%;
+    --sidebar-primary: 45 95% 55%;
+    --sidebar-primary-foreground: 168 28% 12%;
+    --sidebar-accent: 160 48% 36%;
+    --sidebar-accent-foreground: 44 32% 95%;
+    --sidebar-border: 170 20% 26%;
+    --sidebar-ring: 45 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 8px hsl(var(--primary) / 0.7), 0 0 20px hsl(var(--primary) / 0.5);
+    animation: glow-blink 2.5s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-blink {
+
+  0%,
+  100% {
+    text-shadow: 0 0 8px hsl(var(--primary) / 0.6), 0 0 20px hsl(var(--primary) / 0.4);
+  }
+
+  50% {
+    text-shadow: 0 0 16px hsl(var(--primary) / 0.9), 0 0 40px hsl(var(--primary) / 0.7);
+  }
+}
