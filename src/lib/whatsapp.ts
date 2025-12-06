@@ -12,7 +12,7 @@ export const openWhatsAppChat = (phone: string, message: string) => {
   if (typeof window === "undefined") return;
 
   if (typeof window.fbq === "function") {
-    window.fbq("track", "Contact Black LP");
+    window.fbq("track", "Contact Promo LP");
   }
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;

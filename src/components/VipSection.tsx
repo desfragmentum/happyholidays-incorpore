@@ -18,9 +18,9 @@ const VipSection = () => {
             <Gift className="h-16 w-16 text-primary mx-auto" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-glow">BÔNUS</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">BÔNUS</h2>
 
-          <h3 className="text-4xl md:text-5xl font-bold text-glow">
+          <h3 className="text-4xl md:text-5xl font-bold">
             Desconto Exclusivo <span className="text-primary">+ CASHBACK!</span>
           </h3>
 

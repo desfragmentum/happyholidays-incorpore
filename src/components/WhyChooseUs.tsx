@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="text-center mb-16 space-y-4"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-glow">
+          <h2 className="text-4xl md:text-5xl font-bold">
             A Escolha Certa para Sua <span className="text-primary">Transformação</span>
           </h2>
           <p className="text-xl text-secondary-foreground/90 max-w-3xl mx-auto">

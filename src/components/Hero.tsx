@@ -22,7 +22,7 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in-up text-glow">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in-up">
             PÓS BLACK IN'CORPORE
             <span className="block mt-2 text-primary">Redução de Gordura Abdominal</span>
             <p className="text-lg line-through text-muted-foreground mt-4">De R$ 1.780,00</p>
