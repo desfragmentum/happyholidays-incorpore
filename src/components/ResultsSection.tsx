@@ -47,6 +47,21 @@ const whatsappNumber = "5516997797113";
 const whatsappMessage =
   "Oi! Quero saber mais sobre a oferta do procedimento de Redução de gordura.";
 
+const testimonialVideos: Array<{ src: string; title: string }> = [
+  {
+    src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/videos/depoimento-1.mp4",
+    title: "Depoimento em vídeo 1",
+  },
+  {
+    src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/videos/depoimento-2.mp4",
+    title: "Depoimento em vídeo 2",
+  },
+  {
+    src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/videos/depoimento-3.mp4",
+    title: "Depoimento em vídeo 3",
+  },
+];
+
 const ResultsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>(categories[0]);
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
@@ -182,6 +197,26 @@ const ResultsSection = () => {
               alt="Depoimento de cliente 2"
               className="rounded-lg shadow-lg w-full"
             />
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto justify-items-center">
+            {testimonialVideos.map((video) => (
+              <div
+                key={video.src}
+                className="w-full max-w-[360px] rounded-lg shadow-lg overflow-hidden bg-card border border-border"
+              >
+                <video
+                  className="w-full aspect-[9/16] object-cover"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  aria-label={video.title}
+                >
+                  <source src={video.src} type="video/mp4" />
+                  Seu navegador não suporta vídeo HTML5.
+                </video>
+              </div>
+            ))}
           </div>
         </motion.div>
 

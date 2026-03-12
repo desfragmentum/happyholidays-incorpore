@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container px-4 py-16">
-        {/* Enzimas */}
+        {/* Pós Crio */}
         <div className="relative mb-20 overflow-hidden rounded-2xl border border-border/40 bg-background/20 p-8 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.5)] hover:border-primary/50">
           <div className="absolute -right-20 -top-20 h-60 w-60 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.15),transparent_60%)]" />
           <div className="relative z-10 grid items-center justify-center gap-8 md:grid-cols-2">
@@ -31,8 +31,8 @@ const Footer = () => {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/fim-de-ano/Enzimas-novo.jpeg"
-                alt="Aplicação de Enzimas"
+                src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/pos-crio.jpeg"
+                alt="Pós Crio - 5 Sessões"
                 className="h-auto w-full max-w-sm rounded-lg object-cover shadow-md"
               />
             </motion.div>
@@ -43,10 +43,11 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h4 className="text-3xl font-bold text-primary text-glow">Potencialize Seus Resultados!</h4>
+              <h4 className="text-3xl font-bold text-primary text-glow">Pós Crio: potencialize seus resultados!</h4>
               <p className="text-lg text-secondary-foreground/80">
-                Já pensou em acelerar ainda mais a queima de gordura? Nossa aplicação de enzimas (Lipo
-                Enzimática) é o complemento perfeito para a Criolipólise.
+                Potencialize os resultados do TOTALCRIO4MDK com o mais completo Pós Crio (5 sessões).
+                Protocolo pensado para melhorar a recuperação, reduzir o inchaço e deixar a pele com um
+                aspecto ainda mais firme e definido.
               </p>
               <motion.div
                 animate={{
@@ -62,62 +63,10 @@ const Footer = () => {
               >
                 <Button
                   size="lg"
-                  onClick={() => handleWhatsApp("LIPO ENZIMÁTICA")}
+                  onClick={() => handleWhatsApp("PÓS CRIO (5 SESSÕES)")}
                   className="w-full text-base md:w-auto px-4 md:px-8"
                 >
-                  SABER MAIS SOBRE A LIPO ENZIMÁTICA
-                </Button>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-        {/* Enzimas Lipo Papada */}
-        <div className="relative mb-20 overflow-hidden rounded-2xl border border-border/40 bg-background/20 p-8 shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.5)] hover:border-primary/50">
-          <div className="absolute -right-20 -top-20 h-60 w-60 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.15),transparent_60%)]" />
-          <div className="relative z-10 grid items-center justify-center gap-8 md:grid-cols-2">
-            <motion.div
-              className="md:order-2 flex justify-center"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <img
-                src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/fim-de-ano/lipo-papada.jpeg"
-                alt="Aplicação de Lipo Enzimática de Papada"
-                className="h-auto w-full max-w-sm rounded-lg object-cover shadow-md"
-              />
-            </motion.div>
-            <motion.div
-              className="space-y-6 text-center md:order-1 md:text-left"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <h4 className="text-3xl font-bold text-primary text-glow">Beleza Renovada!</h4>
-              <p className="text-lg text-secondary-foreground/80">
-                Dê adeus à papada e conquiste um contorno facial mais fino e elegante em poucas sessões com a (Lipo
-                Enzimática de Papada) é o complemento perfeito para a Criolipólise.
-              </p>
-              <motion.div
-                animate={{
-                  scale: [1, 1.05, 1],
-                }}
-                transition={{
-                  scale: {
-                    duration: 2.5,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  },
-                }}
-              >
-                <Button
-                  size="lg"
-                  onClick={() => handleWhatsApp("LIPO ENZIMÁTICA DE PAPADA")}
-                  className="w-full px-3 py-3 text-sm whitespace-normal break-words md:w-auto md:px-8 md:text-base md:whitespace-nowrap"
-                >
-                  SABER MAIS SOBRE A LIPO ENZIMÁTICA DE PAPADA
+                  SABER MAIS SOBRE O PÓS CRIO
                 </Button>
               </motion.div>
             </motion.div>

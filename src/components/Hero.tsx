@@ -18,12 +18,12 @@ const Hero = () => {
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="inline-block animate-fade-in">
             <span className="inline-block rounded-full bg-primary/10 px-6 py-2 text-sm font-semibold tracking-wider text-primary uppercase border border-primary/20">
-              Adeus 2025! Beleza Renovada em 2026!
+              Beleza Renovada em 2026!
             </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in-up">
-            PÓS BLACK IN'CORPORE
+            MEGA OFERTA IN'CORPORE
             <span className="block mt-2 text-primary">Redução de Gordura Abdominal</span>
             <p className="text-lg line-through text-muted-foreground mt-4">De R$ 1.780,00</p>
             <p className="text-sm font-semibold tracking-widest uppercase mt-4">POR APENAS</p>
@@ -40,10 +40,10 @@ const Hero = () => {
                 },
               }}
             >
-              <span className="block text-12xl md:text-5xl mt-4">12x de 83,33</span>
+              <span className="block text-12xl md:text-5xl mt-4">12x de 99,99</span>
             </motion.div>
             <p className="text-sm font-semibold tracking-widest uppercase mt-4">Sem Juros</p>
-            <p className="mt-6 text-2xl md:text-4xl font-bold leading-tight animate-fade-in-up text-primary">Está Acabando! Mega Desconto! Últimas 5 Vagas! Aproveite Agora!</p>
+            <p className="mt-6 text-2xl md:text-4xl font-bold leading-tight animate-fade-in-up text-primary">As 10 primeiras pessoas que fecharem agora! Ganharão +4 sessões de Lipo sem Cortes! Aproveite!</p>
           </h1>
 
           <p className="text-xl md:text-2xl text-secondary-foreground/80 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">

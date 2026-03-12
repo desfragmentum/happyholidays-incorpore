@@ -123,7 +123,7 @@ const Treatments = () => {
                   },
                 }}
               >
-                12x de R$ 83,33
+                12x de R$ 99,99
               </motion.p>
               <p className="text-sm font-semibold tracking-widest text-foreground uppercase">
                 sem Juros
@@ -158,7 +158,7 @@ const Treatments = () => {
             <div className="text-center text-sm text-muted-foreground pt-4">
               <p>
                 💡 <strong>Potencialize seus resultados!</strong> Acrescente nosso pacote de{" "}
-                <strong>LIPO ENZIMÁTICA</strong>, também com oferta especial de FIM DE ANO da IN'CORPORE, e
+                <strong>LIPO ENZIMÁTICA</strong>, também com oferta especial, e
                 deixe seu procedimento ainda mais completo!
               </p>
             </div>

@@ -36,11 +36,11 @@ const CountdownTimer = () => {
   const TimeUnit = ({ value, label }: { value: string; label: string }) => (
     <div className="flex flex-col items-center">
       <div className="flex min-w-[52px] items-center justify-center rounded-md bg-primary-foreground/15 px-3 py-1.5">
-        <span className="text-lg font-bold tabular-nums text-primary-foreground">
+        <span className="text-lg font-bold tabular-nums text-white">
           {value}
         </span>
       </div>
-      <span className="mt-1 text-[10px] uppercase tracking-[0.2em] text-primary-foreground/70">
+      <span className="mt-1 text-[10px] uppercase tracking-[0.2em] text-white/70">
         {label}
       </span>
     </div>
@@ -48,27 +48,27 @@ const CountdownTimer = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur w-full">
-      <div className="mx-auto flex h-12 w-full max-w-6xl items-center justify-between px-4 text-primary-foreground">
-        <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-primary-foreground/70">
+      <div className="mx-auto flex h-12 w-full max-w-6xl items-center justify-between px-4 text-white">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-white/70">
           Oferta Exclusiva
         </span>
 
-        <p className="text-[10px] font-medium text-center leading-tight sm:hidden">
+        <p className="text-[10px] font-medium text-center leading-tight sm:hidden text-white">
           Últimos 15 minutos para garantir seu TOTALCRIO4MDK.
         </p>
-        <p className="hidden text-xs font-medium text-center sm:block sm:text-left">
+        <p className="hidden text-xs font-medium text-center sm:block sm:text-left text-white">
           Últimos 15 minutos para garantir o TOTALCRIO4MDK com condição exclusiva.
         </p>
 
         <div className="flex items-center gap-1 sm:gap-2">
           <div className="flex min-w-[44px] items-center justify-center rounded bg-primary-foreground/15 px-2 py-1">
-            <span className="text-sm font-semibold tabular-nums">{minutes}</span>
+            <span className="text-sm font-semibold tabular-nums text-white">{minutes}</span>
           </div>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-primary-foreground/70">Min</span>
+          <span className="text-[10px] uppercase tracking-[0.25em] text-white/70">Min</span>
           <div className="flex min-w-[44px] items-center justify-center rounded bg-primary-foreground/15 px-2 py-1">
-            <span className="text-sm font-semibold tabular-nums">{seconds}</span>
+            <span className="text-sm font-semibold tabular-nums text-white">{seconds}</span>
           </div>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-primary-foreground/70">Seg</span>
+          <span className="text-[10px] uppercase tracking-[0.25em] text-white/70">Seg</span>
         </div>
       </div>
     </div>

@@ -8,22 +8,22 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 170 24% 8%;
+    --background: 0 0% 0%;
     --foreground: 44 30% 95%;
 
-    --card: 170 26% 12%;
+    --card: 0 0% 6%;
     --card-foreground: 44 30% 95%;
 
-    --popover: 170 26% 12%;
+    --popover: 0 0% 6%;
     --popover-foreground: 44 30% 95%;
 
-    --primary: 45 95% 55%;
+    --primary: 338 83% 43%;
     --primary-foreground: 168 28% 12%;
 
-    --secondary: 170 22% 14%;
+    --secondary: 0 0% 8%;
     --secondary-foreground: 44 30% 92%;
 
-    --muted: 170 18% 18%;
+    --muted: 0 0% 12%;
     --muted-foreground: 44 24% 75%;
 
     --accent: 160 52% 40%;
@@ -32,37 +32,37 @@ All colors MUST be HSL.
     --destructive: 16 82% 55%;
     --destructive-foreground: 44 35% 96%;
 
-    --border: 170 20% 28%;
-    --input: 170 20% 28%;
-    --ring: 45 95% 55%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 338 83% 43%;
 
     --radius: 0.75rem;
 
     /* In'Corpore Brand Colors */
-    --brand-pink: 45 95% 55%;
-    --brand-black: 170 24% 8%;
+    --brand-pink: 338 83% 43%;
+    --brand-black: 0 0% 0%;
     --brand-cream: 44 32% 94%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(170 42% 20%) 0%, hsl(160 36% 14%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(170 28% 12%) 0%, hsl(170 22% 8%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 4%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 0%) 100%);
 
     /* Shadows */
-    --shadow-luxury: 0 20px 60px -15px hsl(45 95% 55% / 0.35);
-    --shadow-card: 0 10px 40px -10px hsl(170 20% 10% / 0.45);
+    --shadow-luxury: 0 20px 60px -15px hsl(var(--primary) / 0.35);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.55);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-background: 170 22% 12%;
+    --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 44 30% 92%;
-    --sidebar-primary: 45 95% 55%;
+    --sidebar-primary: 338 83% 43%;
     --sidebar-primary-foreground: 168 28% 12%;
     --sidebar-accent: 160 48% 36%;
     --sidebar-accent-foreground: 44 32% 95%;
     --sidebar-border: 170 20% 26%;
-    --sidebar-ring: 45 95% 55%;
+    --sidebar-ring: 338 83% 43%;
   }
 
   .dark {
@@ -75,13 +75,13 @@ All colors MUST be HSL.
     --popover: 0 0% 5%;
     --popover-foreground: 44 30% 96%;
 
-    --primary: 45 95% 55%;
+    --primary: 338 83% 43%;
     --primary-foreground: 170 24% 8%;
 
-    --secondary: 170 22% 14%;
+    --secondary: 0 0% 8%;
     --secondary-foreground: 44 30% 92%;
 
-    --muted: 170 18% 18%;
+    --muted: 0 0% 12%;
     --muted-foreground: 44 24% 75%;
 
     --accent: 160 52% 40%;
@@ -90,17 +90,17 @@ All colors MUST be HSL.
     --destructive: 16 78% 52%;
     --destructive-foreground: 44 35% 96%;
 
-    --border: 170 20% 28%;
-    --input: 170 20% 28%;
-    --ring: 45 95% 55%;
-    --sidebar-background: 170 22% 12%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 338 83% 43%;
+    --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 44 30% 92%;
-    --sidebar-primary: 45 95% 55%;
+    --sidebar-primary: 338 83% 43%;
     --sidebar-primary-foreground: 168 28% 12%;
     --sidebar-accent: 160 48% 36%;
     --sidebar-accent-foreground: 44 32% 95%;
     --sidebar-border: 170 20% 26%;
-    --sidebar-ring: 45 95% 55%;
+    --sidebar-ring: 338 83% 43%;
   }
 }
 
