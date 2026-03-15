@@ -47,32 +47,30 @@ const CountdownTimer = () => {
   );
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur w-full">
-      <div className="mx-auto flex h-12 w-full max-w-6xl items-center justify-between px-4 text-white">
-        <span className="text-[10px] font-semibold uppercase tracking-[0.35em] text-white/70">
+    <div className="fixed top-0 left-0 right-0 z-[100] bg-primary h-12 flex items-center shadow-lg">
+      <div className="container mx-auto px-4 flex justify-between items-center text-white">
+        <div className="hidden md:block font-bold text-xs uppercase tracking-widest opacity-80">
           Oferta Exclusiva
-        </span>
+        </div>
+        
+        <div className="text-[10px] md:text-sm font-medium flex-1 text-center px-4">
+          Últimos 15 minutos para garantir o <span className="font-bold">TOTALCRIO4MDK</span> com condição exclusiva.
+        </div>
 
-        <p className="text-[10px] font-medium text-center leading-tight sm:hidden text-white">
-          Últimos 15 minutos para garantir seu TOTALCRIO4MDK.
-        </p>
-        <p className="hidden text-xs font-medium text-center sm:block sm:text-left text-white">
-          Últimos 15 minutos para garantir o TOTALCRIO4MDK com condição exclusiva.
-        </p>
-
-        <div className="flex items-center gap-1 sm:gap-2">
-          <div className="flex min-w-[44px] items-center justify-center rounded bg-primary-foreground/15 px-2 py-1">
-            <span className="text-sm font-semibold tabular-nums text-white">{minutes}</span>
+        <div className="flex items-center gap-2 font-bold text-xs md:text-sm whitespace-nowrap">
+          <div className="flex items-center gap-1">
+            <span className="bg-black/20 rounded px-1.5 py-0.5 min-w-[24px] text-center">{minutes}</span>
+            <span className="text-[10px] opacity-70">MIN</span>
           </div>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-white/70">Min</span>
-          <div className="flex min-w-[44px] items-center justify-center rounded bg-primary-foreground/15 px-2 py-1">
-            <span className="text-sm font-semibold tabular-nums text-white">{seconds}</span>
+          <div className="flex items-center gap-1">
+            <span className="bg-black/20 rounded px-1.5 py-0.5 min-w-[24px] text-center">{seconds}</span>
+            <span className="text-[10px] opacity-70">SEG</span>
           </div>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-white/70">Seg</span>
         </div>
       </div>
     </div>
   );
+
 };
 
 export default CountdownTimer;

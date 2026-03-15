@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const whatsappNumber = "5516997797113";
 const whatsappMessage =
-  "Oi! Quero saber mais sobre a oferta do procedimento de Redução de gordura.";
+  "Oi! Quero saber mais sobre a oferta do procedimento de Redução de gordura. Cupom: PROMOINCORPORE";
 
 const highlights = [
   { icon: <TrendingUp className="h-6 w-6 text-primary" />, text: "Perca até 17 cm de abdômen." },
@@ -106,12 +106,11 @@ const Treatments = () => {
             </div>
 
             <div className="bg-card border-2 border-primary/50 rounded-xl p-6 shadow-2xl shadow-primary/20 space-y-4 text-center transform sm:hover:scale-105 transition-transform duration-300 w-full">
-              <p className="text-lg line-through text-muted-foreground">De R$ 1.780,00</p>
               <p className="text-sm font-semibold tracking-widest text-foreground uppercase">
-                POR APENAS
+                USE O CUPOM DE DESCONTO
               </p>
-              <motion.p
-                className="text-5xl md:text-6xl font-bold text-primary"
+              <motion.div
+                className="bg-primary/10 border-2 border-dashed border-primary rounded-lg py-4 px-6 inline-block"
                 animate={{
                   scale: [1, 1.05, 1],
                 }}
@@ -123,14 +122,13 @@ const Treatments = () => {
                   },
                 }}
               >
-                12x de R$ 99,99
-              </motion.p>
-              <p className="text-sm font-semibold tracking-widest text-foreground uppercase">
-                sem Juros
-              </p>
+                <p className="text-4xl md:text-5xl font-mono font-bold text-primary tracking-tighter">
+                  PROMOINCORPORE
+                </p>
+              </motion.div>
               <div className="flex items-center justify-center gap-2 pt-2">
                 <Flame className="h-6 w-6 text-primary animate-pulse" />
-                <p className="font-bold text-primary animate-pulse text-lg">VAGAS LIMITADAS!</p>
+                <p className="font-bold text-primary animate-pulse text-lg">OFERTA LIMITADA!</p>
               </div>
             </div>
 
@@ -149,7 +147,7 @@ const Treatments = () => {
               <Button
                 size="lg"
                 onClick={() => openWhatsAppChat(whatsappNumber, whatsappMessage)}
-                className="w-full text-lg py-6 h-auto bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-[0_0_30px_hsl(var(--primary)/0.4)] hover:shadow-[0_0_40px_hsl(var(--primary)/0.55)] transition-all duration-300 sm:hover:scale-105"
+                className="w-full text-lg py-6 h-auto bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-[0_0_30_hsl(var(--primary)/0.4)] hover:shadow-[0_0_40_hsl(var(--primary)/0.55)] transition-all duration-300 sm:hover:scale-105"
               >
                 GARANTIR OFERTA AGORA!
               </Button>
