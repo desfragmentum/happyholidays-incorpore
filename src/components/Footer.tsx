@@ -2,14 +2,15 @@ import { Button } from "@/components/ui/button";
 import { openWhatsAppChat } from "@/lib/whatsapp";
 import { Globe, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import posCrioImg from "@/assets/pos-crio/pos-crio.webp";
+import logoImg from "@/assets/incorpore-logo-header.webp";
 
 const whatsappNumber = "5516997797113";
 const whatsappMessage =
   "Oi! Quero saber mais sobre a oferta do procedimento de Redução de gordura.";
 
 const Footer = () => {
-  const logoUrl =
-    "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/incorpore-logo-header.png";
+  const logoUrl = logoImg;
 
   const handleWhatsApp = (extra?: string) => {
     const message = extra ? `${whatsappMessage} E também tenho interesse em ${extra}.` : whatsappMessage;
@@ -31,7 +32,7 @@ const Footer = () => {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/pos-crio.jpeg"
+                src={posCrioImg}
                 alt="Pós Crio - 5 Sessões"
                 className="h-auto w-full max-w-sm rounded-lg object-cover shadow-md"
               />

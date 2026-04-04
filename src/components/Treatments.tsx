@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Check, CheckCircle, Flame, Package, Sparkles, TrendingUp } from "lucide-react";
 import { openWhatsAppChat } from "@/lib/whatsapp";
 import { Button } from "./ui/button";
+import crioResult1 from "@/assets/crio-result.webp";
+import crioResult2 from "@/assets/crio-result-02.webp";
 
 const whatsappNumber = "5516997797113";
 const whatsappMessage =
@@ -27,12 +29,12 @@ const Treatments = () => {
             className="order-last lg:order-first flex flex-col items-center gap-4"
           >
             <img
-              src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/crio-result.jpeg"
+              src={crioResult1}
               alt="Resultado Criolipólise 1"
               className="rounded-lg w-full max-w-[22rem] sm:max-w-lg shadow-2xl"
             />
             <img
-              src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/crio-result-02.jpeg"
+              src={crioResult2}
               alt="Resultado Criolipólise 2"
               className="rounded-lg shadow-lg w-full max-w-[22rem] sm:max-w-none"
             />

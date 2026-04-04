@@ -3,39 +3,53 @@ import { AnimatePresence, motion, useInView } from "framer-motion";
 import { X } from "lucide-react";
 import { openWhatsAppChat } from "@/lib/whatsapp";
 import { Button } from "./ui/button";
+import totalCrio1 from "@/assets/results/TOTALCRIO4MDK1.webp";
+import totalCrio3 from "@/assets/results/TOTALCRIO4MDK3.webp";
+import totalCrio5 from "@/assets/results/TOTALCRIO4MDK5.webp";
+import totalCrio6 from "@/assets/results/TOTALCRIO4MDK6.webp";
+import reducaoMedidas1 from "@/assets/results/Reducao-de-medidas1.webp";
+import reducaoMedidas2 from "@/assets/results/Reducao-de-medidas2.webp";
+import reducaoMedidas3 from "@/assets/results/Reducao-de-medidas3.webp";
+import reducaoMedidas4 from "@/assets/results/Reducao-de-medidas4.webp";
+import resultTotalCrio from "@/assets/result-totalcrio.webp";
+import depoimento1 from "@/assets/depo01.webp";
+import depoimento2 from "@/assets/depo02.webp";
+import video1 from "@/assets/videos/depoimento-1.mp4";
+import video2 from "@/assets/videos/depoimento-2.mp4";
+import video3 from "@/assets/videos/depoimento-3.mp4";
 
 const resultsByCategory: Record<string, Array<{ src: string; alt: string }>> = {
   "Criolipólise (TOTALCRIO4MDK)": [
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK1.jpeg",
+      src: totalCrio1,
       alt: "Resultado de Criolipólise 1",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK3.jpeg",
+      src: totalCrio3,
       alt: "Resultado de Criolipólise 2",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK5.jpeg",
+      src:  totalCrio5,
       alt: "Resultado de Criolipólise 3",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK6.jpeg",
+      src: totalCrio6,
       alt: "Resultado de Criolipólise 4",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Redu%C3%A7%C3%A3o%20de%20Medidas/Reducao-de-medidas1.webp",
+      src: reducaoMedidas1,
       alt: "Resultado de Redução de Medidas 1",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Redu%C3%A7%C3%A3o%20de%20Medidas/Reducao-de-medidas2.webp",
+      src: reducaoMedidas2,
       alt: "Resultado de Redução de Medidas 2",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Redu%C3%A7%C3%A3o%20de%20Medidas/Reducao-de-medidas3.webp",
+      src: reducaoMedidas3,
       alt: "Resultado de Redução de Medidas 3",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Redu%C3%A7%C3%A3o%20de%20Medidas/Reducao-de-medidas4.webp",
+      src: reducaoMedidas4,
       alt: "Resultado de Redução de Medidas 4",
     },
   ],
@@ -49,15 +63,15 @@ const whatsappMessage =
 
 const testimonialVideos: Array<{ src: string; title: string }> = [
   {
-    src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/videos/depoimento-1.mp4",
+    src: video1,
     title: "Depoimento em vídeo 1",
   },
   {
-    src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/videos/depoimento-2.mp4",
+    src: video2,
     title: "Depoimento em vídeo 2",
   },
   {
-    src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/videos/depoimento-3.mp4",
+    src: video3,
     title: "Depoimento em vídeo 3",
   },
 ];
@@ -169,7 +183,7 @@ const ResultsSection = () => {
           </h3>
           <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Depoimentos/result.jpeg"
+              src={resultTotalCrio}
               alt="Resultado de sucesso de cliente"
               className="w-full h-auto"
             />
@@ -188,12 +202,12 @@ const ResultsSection = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <img
-              src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Depoimentos/depo01.jpeg"
+              src={depoimento1}
               alt="Depoimento de cliente 1"
               className="rounded-lg shadow-lg w-full"
             />
             <img
-              src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/Depoimentos/depo03.jpeg"
+              src={depoimento2}
               alt="Depoimento de cliente 2"
               className="rounded-lg shadow-lg w-full"
             />

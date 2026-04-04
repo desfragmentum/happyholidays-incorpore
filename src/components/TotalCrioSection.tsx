@@ -1,3 +1,5 @@
+import womanImage from '@/assets/mulher-corpo-femea-com-fita-centimetro-ao-redor-na-parede-branca-.webp';
+
 const TotalCrioSection = () => {
     return (
         <section className="bg-background py-20">
@@ -45,7 +47,7 @@ const TotalCrioSection = () => {
                     <div className="absolute inset-0 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
                     <img
                         className="max-w-[22rem] sm:max-w-lg relative z-10 w-full rounded-3xl object-cover shadow-2xl"
-                        src="https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/mulher-corpo-femea-com-fita-centimetro-ao-redor-na-parede-branca.jpg"
+                        src={womanImage}
                         alt="Mulher fitness confiante após tratamento corporal"
                     />
                 </div>

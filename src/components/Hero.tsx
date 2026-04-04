@@ -5,6 +5,10 @@ import { openWhatsAppChat } from "@/lib/whatsapp";
 import NotificationToast from "./NotificationToast";
 import { useToastNotifications } from "./useToastNotifications";
 import { Check, Gift, Flame, MapPin, ChevronRight, ChevronLeft } from "lucide-react";
+import totalCrio1 from "@/assets/results/TOTALCRIO4MDK1.webp";
+import totalCrio3 from "@/assets/results/TOTALCRIO4MDK3.webp";
+import totalCrio5 from "@/assets/results/TOTALCRIO4MDK5.webp";
+import totalCrio6 from "@/assets/results/TOTALCRIO4MDK6.webp";
 
 const Hero = () => {
   const whatsappNumber = "5516997797113";
@@ -41,24 +45,22 @@ const Hero = () => {
 
   const results = [
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK1.jpeg",
+      src: totalCrio1,
       alt: "Resultado 1",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK3.jpeg",
+      src: totalCrio3,
       alt: "Resultado 2",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK5.jpeg",
+      src: totalCrio5,
       alt: "Resultado 3",
     },
     {
-      src: "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/TOTALCRIO4MDK/TOTALCRIO4MDK6.jpeg",
+      src: totalCrio6,
       alt: "Resultado 4",
     },
   ];
-
-  const logoUrl = "https://jjpas441qaaopsgd.public.blob.vercel-storage.com/img/incorpore-logo-header.png";
 
   return (
     <section className="relative pt-20 md:pt-24 pb-8 bg-black text-white overflow-hidden">
